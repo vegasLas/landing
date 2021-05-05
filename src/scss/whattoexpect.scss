@@ -1,0 +1,111 @@
+.whattoexpect {
+    display: flex;
+    justify-content: center;
+    &__container {
+        display: flex;
+        max-width: 3853px;
+        flex: 0 1 100%;
+        flex-direction: column;
+        justify-content: end;
+    }
+    &__body {
+        max-width: 1351px;
+        flex: 0 1 100%;
+        flex: 0 1 100%;
+    }
+    &__container-body {
+        padding-top: 281px;
+        padding-bottom: 238px;
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: flex-end;
+        position: relative;
+        &::before {
+            content: url("./imgs/expect/3\ girls\ on\ white.png");
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            z-index: -1;
+        }
+        &::after {
+            content: url("./imgs/expect/Group\ 510.png");
+            position: absolute;
+            left: 15%;
+            bottom: -180px;
+            bottom: -129px;
+        }
+    }
+    &__h2 {
+        margin-bottom: 33px;
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 160px;
+        line-height: 133.6%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #e80a03;
+    }
+    &__h3 {
+        padding-left: 126.75px;
+        
+    }
+    &__li {
+        position: relative;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 133.6%;
+        letter-spacing: -0.01em;
+        margin-bottom: 26px;
+        color: #000000;
+        padding-left: 126.75px;
+        &::before {
+            position: "";
+            position: absolute;
+            height: 100%;
+            left: 126.75px;
+            top: 0;
+            width: 100%;
+            content: url("../imgs/expect/galka.png");
+        }
+        &:last-child {
+            margin-bottom: 56px;
+        }
+    }
+    &__p {
+        
+        font-family: "Roboto Condensed";
+        font-style: italic;
+        font-weight: normal;
+        font-size: 116px;
+        line-height: 133.6%;
+        letter-spacing: 0.005em;
+        color: #000000;
+        margin-bottom: 66px;
+        &:nth-child(3) {
+            font-family: "Roboto Condensed";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 75px;
+            line-height: 120.6%;
+            letter-spacing: 0.01em;
+            color: #5cc910;
+        }
+        &:last-child {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            padding-left: 126.75px;
+            font-size: 80px;
+            line-height: 133.6%;
+            /* or 107px */
+            letter-spacing: 0.05em;
+            color: #000000;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

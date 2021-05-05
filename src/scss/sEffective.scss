@@ -1,0 +1,92 @@
+.effective {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+    padding-top: 389px;
+    padding-bottom: 179px;
+        max-width: 3855px;
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: flex-start;
+        position: relative;
+        &::before {
+            content: url("./imgs/effective/girl.png");
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            z-index: -1;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1797px;
+        flex: 0 1 100%;
+    }
+    &__h2 {
+        max-width: 1797px;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 172px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #651695;
+        margin-bottom: 90px;
+        span {
+            &:last-child {
+                color: #312a4b;
+            }
+        }
+    }
+
+    &__li {
+        margin-bottom: 109px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        padding-left: 298px;
+    }
+    &__h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 127.6%;
+        letter-spacing: 0.01em;
+        color: #1d4f86;
+        margin-bottom: 35px;
+        position: relative;
+        &::before {
+            position: "";
+            position: absolute;
+            height: 100%;
+            left: -205px;
+            top: 0;
+            width: 100%;
+            content: url("./imgs/effective/galka.png");
+        }
+    }
+    &__p {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90px;
+        line-height: 127.6%;
+        letter-spacing: -0.01em;
+        margin-bottom: 91px;
+        color: #5cc910;
+    }
+    &__p-li {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 127.6%;
+        letter-spacing: 0.01em;
+        color: #1d4f86;
+        max-width: 1253px;
+    }
+}
