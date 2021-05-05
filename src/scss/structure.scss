@@ -1,0 +1,59 @@
+.structure {
+    background: #f6fbff;
+    display: flex;
+    justify-content: center;
+    &__body {
+        display: flex;
+        padding-top: 109px;
+        padding-bottom: 88px;
+    }
+    &__h2 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #404040;
+    }
+
+    &__contain,
+    &__channels {
+        display: flex;
+        flex-direction: column;
+    }
+    &__contain {
+        margin-right: 111px;
+        text-align: end;
+        span {
+            display: block;
+            &:last-child {
+                margin-top: 20px;
+                font-size: 55px;
+            }
+        }
+    }
+    &__h2 {
+        margin-bottom:99px;
+    }
+    &__ul {
+        display: flex;
+        &:first-child {
+            margin-bottom: 86px;
+            li {
+                margin-right: 42px;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+        &:last-child {
+            li {
+                margin-right: 80px;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

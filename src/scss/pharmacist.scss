@@ -1,0 +1,55 @@
+.pharmacist {
+    display: flex;
+    justify-content: center;
+    &__body {
+        padding-top: 371px;
+        display: flex;
+        flex-direction: column;
+        float: 0 1 100%;
+        max-width: 2916px;
+        text-align: center;
+    }
+    &__h2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 172px;
+        letter-spacing: 0.01em;
+        color: #0064f9;
+        margin-bottom: 33px;
+    }
+    &__p {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 88px;
+        text-align: center;
+        color: #404040;
+        margin-bottom: 78px;
+    }
+    &__a {
+        display: block;
+        margin: 0 auto;
+        width: 729px;
+        height: 143px;
+        left: 1555px;
+        top: 11857px;
+        background: #ff1a0d;
+        border-radius: 4px;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        padding: 27px 121px;
+        line-height: 127.6%;
+    }
+    &__video-container {
+        margin-bottom: 135px;
+        flex: 0 1 100%;
+        video {
+            max-width: 2687px;
+        }
+    }
+}

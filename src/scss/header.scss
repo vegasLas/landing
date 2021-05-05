@@ -1,0 +1,240 @@
+.header {
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    padding-bottom: 46px;
+    justify-content: flex-end;
+    &__body {
+        padding-right: 80px;
+        display: flex;
+    }
+    &__info {
+        margin-right: 69.29px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__h1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 38px;
+        span {
+            font-style: normal;
+            font-family: Arial;
+            text-align: end;
+            display: block;
+            text-transform: uppercase;
+            &:first-child {
+                font-family: "Roboto";
+                font-style: italic;
+                font-weight: normal;
+                font-size: 88px;
+                letter-spacing: 0.01em;
+                color: #3671b8;
+                padding-right: 65px;
+            }
+            &:nth-child(2) {
+                font-family: "Roboto";
+                font-weight: 900;
+                font-size: 222px;
+                letter-spacing: -0.01em;
+                color: #ec000d;
+                padding-right: 26px;
+            }
+            &:nth-child(3) {
+                font-family: "Roboto";
+                padding-right: 60px;
+                font-weight: 900;
+                font-size: 200px;
+                letter-spacing: -0.01em;
+                color: #fff910;
+                text-shadow: 0px 0px 15px #0085ff;
+            }
+            &:last-child {
+                padding-right: 75px;
+                font-family: "ArimoBoldItalic", arial;
+                font-size: 75px;
+                letter-spacing: 0.01em;
+                color: #3671b8;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        img {
+            position: absolute;
+            left: 21px;
+            top: -95px;
+            z-index: 2;
+        }
+    }
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 41px;
+    }
+    &__li {
+        background: linear-gradient(
+            89.9deg,
+            #ffffff 0.08%,
+            rgba(255, 255, 255, 0.890625) 89.99%,
+            rgba(255, 255, 255, 0) 100.07%
+        );
+        &:nth-child(2) {
+            border: 1px solid #000000;
+        }
+        margin-bottom: 18px;
+        padding: 30px 195px 30px 288px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 72.16px;
+            height: 72.16px;
+            background: url("./imgs/header/Vector\ \(Stroke\).png") center / auto no-repeat,
+                url("./imgs/header/VectorEllipse.png") center / cover no-repeat;
+            position: absolute;
+            top: 83px;
+            left: 160px;
+        }
+    }
+    &__h3 {
+        font-family: "BebasNeuePro-BoldItalic";
+        font-size: 98px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #21211f;
+    }
+    &__p {
+        font-family: "OswaldItalic";
+        font-size: 36px;
+        letter-spacing: -0.03em;
+        color: #21211f;
+        opacity: 0.8;
+        max-width: 778px;
+    }
+}
+.vector {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -50px;
+    height: 371px;
+    max-width: 1765px;
+    max-height: 371px;
+    background: url("./imgs/header/Vector-yellow.png") center / cover no-repeat;
+    padding: 49px 196px 71px 206px;
+    flex-direction: column;
+    &__h2 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 112px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #030370;
+        margin-bottom: 10px;
+    }
+    &__p {
+        font-family: "Oswald";
+        font-weight: normal;
+        font-size: 82px;
+        color: #1c1855;
+    }
+}
+.form {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        max-width: 940px;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 15px 15px 0px 0px;
+    }
+    &__header {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 101px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #3671b8;
+        padding: 49px 37px;
+        line-height: 127.6%;
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 20px;
+    }
+    &__submit {
+        font-family: "Oswald";
+        font-weight: bold;
+        font-size: 66px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background: #ff1a0d;
+        border-radius: 4px;
+        padding: 52px 106px 74px 98px;
+        margin-bottom: 57px;
+    }
+    &__input {
+        font-family: "Merel-Medium";
+        padding-left: 126px;
+
+        font-size: 48px;
+        width: 794px;
+        height: 107px;
+        margin-bottom: 25px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-top: 21px;
+        
+        &::placeholder {
+            font-family: "MerelMedium";
+            font-size: 48px;
+            text-align: left;
+            color: #cdcdcd;
+        }
+
+        &:nth-child(3) {
+            background: url("./imgs/header/firstNameIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(4) {
+            background: url("./imgs/header/firstNameIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(5) {
+            background: url("./imgs/header/emailIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(6) {
+            background: url("./imgs/header/addressIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(7) {
+            background: url("./imgs/header/cityIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(8) {
+            background: url("./imgs/header/stateIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(9) {
+            background: url("./imgs/header/postatlCodeIcon.png") no-repeat scroll 33px 23px;
+        }
+        &:nth-child(10) {
+            background: url("./imgs/header/phoneIcon.png") no-repeat scroll 33px 23px;
+            margin-bottom: 40px;
+        }
+    }
+    &__select {
+        font-family: "Merel-Medium";
+        font-size: 48px;
+        padding-left: 126px;
+        padding-bottom: 25px;
+        text-align: center;
+
+        color: #979696;
+        background: url("./imgs/header/stateIcon.png") no-repeat scroll 33px 23px;
+    }
+}

@@ -1,0 +1,68 @@
+.revolution {
+    display: flex;
+    justify-content: center;
+    &__body {
+        display: flex;
+        flex: 0 1 100%;
+        max-width: 3516px;
+        padding-top: 372px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1736px;
+        flex: 0 1 50%;
+        margin-right: 29px;
+    }
+    &__h2 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 136px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #ff7043;
+        margin-bottom: 26px;
+    }
+    &__h3 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 88px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #06407d;
+        margin-bottom: 45px;
+    }
+    &__p {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 62px;
+        line-height: 127.6%;
+        text-decoration-line: underline;
+        color: #06407d;
+        margin-bottom: 28px;
+        &:last-child {
+        margin-bottom: 0px;
+
+        }
+        span {
+            display: block;
+            margin-bottom: 78.74px;
+            :last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        &:last-child {
+            font-weight: bold;
+            font-size: 62px;
+            color: #06407d;
+        }
+    }
+    &__img-container {
+        flex: 0 1 50%;
+        padding-top: 146px;
+    }
+}

@@ -1,0 +1,61 @@
+.physicians {
+    display: flex;
+    justify-content: center;
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 323px;
+        flex: 0 1 100%;
+        max-width: 3497px;
+    }
+    &__header {
+        margin-bottom: 150px;
+    }
+    &__videos {
+        display: flex;
+        flex: 0 1 100%;
+    }
+    &__video-container {
+        margin-right: 160px;
+        flex: 0 1 50%;
+        video {
+            margin-bottom: 140px;
+        }
+        p {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            letter-spacing: -0.03em;
+            color: #8a8a8a;
+        }
+    }
+    &__h2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 172px;
+        letter-spacing: 0.01em;
+        color: #0064f9;
+    }
+    &__p {
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 127.6%;
+        letter-spacing: 0.01em;
+        color: #f95f05;
+    }
+    &__doctor-name {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 84px;
+        letter-spacing: -0.03em;
+        color: #333333;
+        margin-bottom: 24px;
+    }
+}
