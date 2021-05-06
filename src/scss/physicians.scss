@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     &__body {
+        padding-bottom: 198px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -9,19 +10,51 @@
         padding-top: 323px;
         flex: 0 1 100%;
         max-width: 3497px;
+        @media (max-width: 2560px) {
+            padding-bottom: 150px;
+            padding-top: 224px;
+        }
+        @media (max-width: 1024px) {
+            padding-top: 100px;
+            padding-bottom: 43px;
+
+        }
     }
     &__header {
         margin-bottom: 150px;
+        @media (max-width: 2560px) {
+            margin-bottom: 76px;
+        }
     }
     &__videos {
         display: flex;
         flex: 0 1 100%;
     }
+    &__video {
+        margin-bottom: 140px;
+        padding: 88.97px 84.93px 76.84px 68.75px;
+        background-color: #fbfbfb;
+        @media (max-width: 2560px) {
+            max-width: 1102px;
+            max-height: 671px;
+            margin-bottom: 24.29px;
+            padding: 57px 54px 49px 44px;
+        }
+        @media (max-width: 1024px) {
+            max-width: 422px;
+            max-height: 257px;
+            padding: 22px 21px 21px 19px;
+
+            margin-bottom: 16;
+        }
+    }
     &__video-container {
+        display: flex;
+        flex-direction: column;
         margin-right: 160px;
         flex: 0 1 50%;
-        video {
-            margin-bottom: 140px;
+        &:last-child {
+            margin-right: 0px;
         }
         p {
             font-family: Arial;
@@ -30,6 +63,28 @@
             font-size: 64px;
             letter-spacing: -0.03em;
             color: #8a8a8a;
+            @media (max-width: 2560px) {
+                font-family: "Arimo";
+                font-size: 55px;
+                letter-spacing: -0.03em;
+            }
+            @media (max-width: 1024px) {
+                font-family: "Roboto";
+                font-size: 18px;
+                line-height: 127.6%;
+            }
+        }
+        @media (max-width: 2560px) {
+            &:first-child {
+                text-align: start;
+            }
+            &:last-child {
+                text-align: end;
+            }
+            margin-right: 55px;
+        }
+        @media (max-width: 1024px) {
+            margin-right: 21px;
         }
     }
     &__h2 {
@@ -39,6 +94,16 @@
         font-size: 172px;
         letter-spacing: 0.01em;
         color: #0064f9;
+        @media (max-width: 2560px) {
+            font-family: "Roboto Condensed";
+            font-weight: bold;
+            font-size: 114px;
+            letter-spacing: 0.01em;
+        }
+        @media (max-width: 1024px) {
+            font-family: "Roboto";
+            font-size: 46px;
+        }
     }
     &__p {
         font-family: "Roboto Condensed";
@@ -48,6 +113,16 @@
         line-height: 127.6%;
         letter-spacing: 0.01em;
         color: #f95f05;
+        @media (max-width: 2560px) {
+            font-family: "Roboto";
+            font-weight: normal;
+            font-size: 72px;
+            line-height: 127.6%;
+        }
+        @media (max-width: 1024px) {
+            font-size: 28px;
+            color: #ff6600;
+        }
     }
     &__doctor-name {
         font-family: Arial;
@@ -57,5 +132,21 @@
         letter-spacing: -0.03em;
         color: #333333;
         margin-bottom: 24px;
+        @media (max-width: 2560px) {
+            font-family: "Arimo";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            letter-spacing: 0.01em;
+            margin-bottom: 9px;
+        }
+        @media (max-width: 1024px) {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            letter-spacing: 0.01em;
+            margin-bottom: 5px;
+        }
     }
 }

@@ -1,0 +1,123 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 100%;
+        max-width: 3855px;
+        text-align: left;
+        padding-top: 287px;
+        text-align: center;
+        padding-bottom: 207px;
+        @media (max-width: 2560px) {
+            padding-top: 137px;
+            padding-bottom: 116px;
+        }
+    }
+    &__h2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 172px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #0064f9;
+        margin-bottom: 39px;
+        @media (max-width: 2560px) {
+            font-family: "Oswald";
+            font-size: 116px;
+            margin-bottom: 43px;
+        }
+    }
+    &__h3 {
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #f95f05;
+        margin-bottom: 121px;
+        @media (max-width: 2560px) {
+            font-family: "Oswald";
+            font-size: 74px;
+            margin-bottom: 81px;
+        }
+       
+    }
+    &__items-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__items {
+        display: flex;
+        gap: 100px;
+        padding: 0 157px 0 172px;
+        &:first-child {
+            margin-bottom: 114px;
+        }
+        @media (max-width: 2560px) {
+            gap: 65px;
+            padding: 0 110px 0 113px;
+            &:first-child {
+                margin-bottom: 75.76px;
+            }
+        }
+    }
+    &__item {
+        text-align: left;
+        background-color: #fbfbfb;
+        display: flex;
+        gap: 105px;
+        padding: 73px 77px 92.85px 89.41px;
+        @media (max-width: 2560px) {
+            padding: 48px 51px 94px 59.5px;
+        }
+    }
+    &__review {
+        display: flex;
+        flex-direction: column;
+    }
+    &__photo {
+        margin-bottom: 16px;
+        @media (max-width: 2560px) {
+            max-width: 373px;
+            max-height: 422px;
+        }
+    }
+    &__stars {
+        @media (max-width: 2560px) {
+            max-width: 170.43px;
+            max-height: 31.11px;
+        }
+    }
+
+    &__p {
+        font-family: "Roboto Condensed";
+        font-style: italic;
+        font-weight: normal;
+        font-size: 53px;
+        line-height: 127.6%;
+        letter-spacing: 0.01em;
+        color: #818181;
+        max-width: 874px;
+        @media (max-width: 2560px) {
+            font-size: 36px;
+        }
+    }
+    &__name {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 127.6%;
+        color: #3f3f3f;
+        @media (max-width: 2560px) {
+            font-size: 42px;
+        }
+    }
+}

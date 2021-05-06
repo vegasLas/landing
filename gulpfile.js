@@ -1,6 +1,5 @@
 const { src, dest, series, watch, parallel } = require("gulp"),
     sass = require('gulp-sass'),
-    fs = require('fs'),
     gulp = require('gulp'),
     csso = require("gulp-csso"),
     htmlmin = require("gulp-htmlmin"),
@@ -12,6 +11,7 @@ const { src, dest, series, watch, parallel } = require("gulp"),
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require('gulp-ttf2woff2'),
     fonter = require("gulp-fonter");
+uglify = require("gulp-uglify-es").default;
 function html() {
     return src("./src/index.html")
         .pipe(htmlmin({
@@ -19,6 +19,11 @@ function html() {
         }))
         .pipe(dest("dist"))
 
+}
+function js() {
+    return src("./src/js/file.js")
+        .pipe(uglify())
+        .pipe(dest("dist/js"))
 }
 function scss() {
     return src("./src/scss/**.scss")
@@ -51,26 +56,7 @@ function fonts() {
         .pipe(ttf2woff2())
         .pipe(dest('dist/fonts/'))
 }
-// function fontsStyle(params) {
 
-//     let file_content = fs.readFileSync('./src/scss/fonts.scss');
-//     if (file_content == '') {
-//         fs.writeFile('./src/scss/fonts.scss', '', cb);
-//         return fs.readdir(path.build.fonts, function (err, items) {
-//             if (items) {
-//                 let c_fontname;
-//                 for (var i = 0; i < items.length; i++) {
-//                     let fontname = items[i].split('.');
-//                     fontname = fontname[0];
-//                     if (c_fontname != fontname) {
-//                         fs.appendFile('./src/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
-//                     }
-//                     c_fontname = fontname;
-//                 }
-//             }
-//         })
-//     }
-// }
 
 function cb() { }
 
@@ -81,6 +67,7 @@ function serve() {
     })
     watch("./src/index.html", series(html)).on('change', sync.reload)
     watch("./src/scss/**.scss", series(scss)).on('change', sync.reload)
+    watch("./src/js/**.js", series(js)).on('change', sync.reload)
     watch("./src/imgs/**/*.{jpg,png,svg,gif,ico,webp}", series(images)).on('change', sync.reload)
 }
 gulp.task("otf2ttf", function () {
@@ -90,8 +77,9 @@ gulp.task("otf2ttf", function () {
         }))
         .pipe(dest('./src/fonts/'))
 })
-exports.build = series(clear, gulp.parallel(scss, html, images, fonts))
-exports.serve = parallel(clear, scss, html, images, serve)
+exports.build = series(clear, gulp.parallel(scss, html, images, fonts, js))
+exports.serve = parallel(clear, scss, html, images, serve, js)
+exports.js = js
 exports.fonts = fonts
 exports.clear = clear
 exports.images = images

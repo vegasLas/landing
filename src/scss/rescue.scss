@@ -1,0 +1,135 @@
+.rescue {
+    display: flex;
+    justify-content: center;
+    &__container-body {
+        padding-bottom: 151px;
+        max-width: 3022px;
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 175px;
+        position: relative;
+        &::before {
+            content: url("./imgs/rescue/girl.png");
+            position: absolute;
+            right: 0;
+            bottom: -206px;
+            z-index: -1;
+            @media (max-width: 2560px) {
+                content: url("./imgs/rescue/girl1.png");
+            }
+        }
+        @media (max-width: 2560px) {
+            padding-bottom: 89.03px;
+
+            padding-top: 150px;
+            padding-left: 274px;
+        }
+    }
+    &__body {
+        z-index: 1;
+        max-width: 1380px;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 2560px) {
+            max-width: 860px;
+        }
+    }
+    &__h2 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 180px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #f70a36;
+        margin-bottom: 6px;
+        @media (max-width: 2560px) {
+            font-family: "BebasBold";
+            font-size: 152px;
+            margin-bottom: 6px;
+        }
+    }
+    &__h3 {
+        font-family: "Arimo";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 130px;
+        line-height: 105.6%;
+        text-transform: uppercase;
+        color: #033c7a;
+        margin-bottom: 89px;
+        max-width: 1374px;
+        @media (max-width: 2560px) {
+            font-size: 80px;
+            color: #403a5e;
+            max-width: 871px;
+            margin-bottom: 45px;
+        }
+    }
+    &__span-h3 {
+        @media (max-width: 2560px) {
+            font-size: 72px;
+            color: #433b6a;
+        }
+    }
+    &__p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        color: #59ce21;
+        margin-bottom: 93px;
+        @media (max-width: 2560px) {
+            font-size: 44px;
+        }
+    }
+    &__h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 105.6%;
+        letter-spacing: 0.01em;
+        color: #393c3b;
+        @media (max-width: 2560px) {
+            font-size: 40px;
+        }
+    }
+    &__ul {
+        margin-bottom: 104px;
+        @media (max-width: 2560px) {
+            margin-bottom: 81px;
+        }
+    }
+    &__li {
+        margin-bottom: 41px;
+        padding-left: 137px;
+        position: relative;
+        &::before {
+            content: "";
+            background: url("./imgs/rescue/Vector.png") center / auto no-repeat,
+                url("./imgs/rescue/Ellipse.png") center / cover no-repeat;
+            position: absolute;
+            left: 0;
+            top: -5px;
+            width: 73px;
+            height: 74px;
+            border-radius: 50%;
+            @media (max-width: 2560px) {
+                background: url("./imgs/rescue/Vector1.png") center / auto no-repeat,
+                    url("./imgs/rescue/Ellipse1.png") center / cover no-repeat;
+                max-width: 49px;
+                max-height: 49px;
+            }
+        }
+        @media (max-width: 2560px) {
+            padding-left: 85px;
+
+            margin-bottom: 28px;
+        }
+    }
+}

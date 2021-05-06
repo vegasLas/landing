@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     &__container {
-    padding-top: 389px;
-    padding-bottom: 179px;
+        padding-top: 389px;
+        padding-bottom: 179px;
+        padding-left: 134px;
         max-width: 3855px;
         display: flex;
         flex: 0 1 100%;
@@ -16,6 +17,15 @@
             right: 0;
             bottom: -10px;
             z-index: -1;
+            @media (max-width: 2560px) {
+                content: url("./imgs/effective/girl1.png");
+
+            }
+        }
+        @media (max-width: 2560px) {
+            padding-top: 244px;
+            padding-left: 155px;
+            padding-bottom: 132px;
         }
     }
     &__body {
@@ -23,6 +33,9 @@
         flex-direction: column;
         max-width: 1797px;
         flex: 0 1 100%;
+        @media (max-width: 2560px) {
+            max-width: 1061px;
+        }
     }
     &__h2 {
         max-width: 1797px;
@@ -40,6 +53,11 @@
                 color: #312a4b;
             }
         }
+        @media (max-width: 2560px) {
+            font-size: 114px;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+        }
     }
 
     &__li {
@@ -47,7 +65,12 @@
         &:last-child {
             margin-bottom: 0px;
         }
-        padding-left: 298px;
+        padding-left: 175px;
+        @media (max-width: 2560px) {
+            max-width: 1253px;
+            margin-bottom: 109px;
+            padding-left: 115px;
+        }
     }
     &__h3 {
         font-family: "Roboto";
@@ -63,10 +86,18 @@
             position: "";
             position: absolute;
             height: 100%;
-            left: -205px;
+            left: -135px;
             top: 0;
             width: 100%;
             content: url("./imgs/effective/galka.png");
+            @media (max-width: 2560px) {
+                content: url("./imgs/effective/galka1.png");
+                left: -125px;
+            }
+        }
+        @media (max-width: 2560px) {
+            font-size: 48px;
+            margin-bottom: 21px;
         }
     }
     &__p {
@@ -78,6 +109,18 @@
         letter-spacing: -0.01em;
         margin-bottom: 91px;
         color: #5cc910;
+        @media (max-width: 2560px) {
+            font-family: "Arimo";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 127.6%;
+            /* or 77px */
+
+            letter-spacing: 0.01em;
+
+            color: #5cc910;
+        }
     }
     &__p-li {
         font-family: "Roboto";
@@ -88,5 +131,8 @@
         letter-spacing: 0.01em;
         color: #1d4f86;
         max-width: 1253px;
+        @media (max-width: 2560px) {
+            font-size: 36px;
+        }
     }
 }

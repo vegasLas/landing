@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 118px;
+    @media (max-width: 2560px) {
+        margin-bottom: 0px;
+    }
     &__container {
         max-width: 3837px;
         flex: 0 1 100%;
@@ -19,6 +22,23 @@
             position: absolute;
             right: 0;
             bottom: -21px;
+            z-index: -2;
+            @media (max-width: 2560px) {
+                bottom: 400px;
+                content: url("./imgs/howworks/women1.png");
+            }
+            @media (max-width: 1024px) {
+                bottom: 200px;
+                content: url("./imgs/howworks/women2.png");
+            }
+        }
+        @media (max-width: 2560px) {
+            padding-top: 113px;
+            padding-left: 107px;
+        }
+        @media (max-width: 1024px) {
+            padding-top: 43px;
+            padding-left: 41px;
         }
     }
 
@@ -27,15 +47,32 @@
         max-width: 1655px;
         flex: 0 1 100%;
         flex-direction: column;
+        @media (max-width: 2560px) {
+            max-width: 1150px;
+        }
+        @media (max-width: 1024px) {
+            max-width: 457px;
+        }
     }
     &__h2 {
         font-family: "Oswald";
         font-style: normal;
         font-weight: bold;
+        max-width: 1655px;
         font-size: 178px;
         letter-spacing: 0.01em;
         text-transform: uppercase;
         margin-bottom: 81px;
+        @media (max-width: 2560px) {
+            font-size: 120px;
+            color: #28598e;
+            max-width: 1150px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 22px;
+            font-size: 48px;
+        }
         span {
             color: red;
         }
@@ -44,7 +81,14 @@
         position: relative;
         padding-left: 279px;
         margin-bottom: 126px;
-
+        @media (max-width: 2560px) {
+            margin-bottom: 85px;
+            padding-left: 188px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 19px;
+            padding-left: 70px;
+        }
         p {
             max-width: 1178px;
             font-family: Arial;
@@ -53,6 +97,17 @@
             font-size: 52px;
             letter-spacing: -0.01em;
             color: #1d4f86;
+            @media (max-width: 2560px) {
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 34px;
+                max-width: 852px;
+            }
+            @media (max-width: 1024px) {
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+            }
         }
         &::before {
             position: "";
@@ -62,6 +117,12 @@
             top: 0;
             width: 100%;
             content: url("./imgs/howworks/icon.png");
+            @media (max-width: 2560px) {
+                content: url("./imgs/howworks/icon1.png");
+            }
+            @media (max-width: 1024px) {
+                content: url("./imgs/howworks/icon2.png");
+            }
         }
     }
     &__h3 {
@@ -72,6 +133,15 @@
         letter-spacing: -0.01em;
         color: #1d4f86;
         margin-bottom: 20px;
+        @media (max-width: 2560px) {
+            font-family: "Roboto";
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 20px;
+            margin-bottom: 1px;
+        }
     }
     &__p {
         font-family: Arial;
@@ -82,39 +152,75 @@
         color: #1d4f86;
         line-height: 127.6%;
         max-width: 1655px;
-
+        &:last-child {
+            max-width: 1543px;
+        }
         &:nth-child(2) {
             margin-bottom: 118px;
-
         }
-
-    }
-    &__foot {
-        background: #6dcff6;
-        flex: 0 1 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        @media (max-width: 2560px) {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            max-width: 1150px;
+            &:nth-child(2) {
+                margin-bottom: 83px;
+            }
+            &:last-child {
+                font-weight: normal;
+                max-width: 1030px;
+            }
+        }
+        @media (max-width: 1024px) {
+            font-size: 21px;
+            &:nth-child(2) {
+                margin-bottom: 31px;
+            }
+            &:last-child {
+                font-weight: normal;
+                max-width: 1030px;
+            }
+        }
     }
 }
 .foot {
-    padding: 104px 0px 127px 0;
-
+    background: #6dcff6;
+    flex: 0 1 100%;
+    display: flex;
+    align-items: center;
+    padding: 104px 208px 127px 165px;
+    @media (max-width: 2560px) {
+        padding: 62px 161px 69px 100px;
+    }
+    @media (max-width: 1024px) {
+        padding: 39px 64px 61px 41px;
+    }
     &__p {
-        padding-left: 165px;
         font-family: "Roboto Condensed";
         font-style: normal;
         font-weight: bold;
         font-size: 110px;
         line-height: 105.6%;
-        /* or 116px */
         letter-spacing: 0.01em;
         color: #ffffff;
         max-width: 2638px;
+        @media (max-width: 2560px) {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 70px;
+            max-width: 1815px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 28px;
+        }
     }
+
     &__a {
+        flex: 0 1 100%;
         margin-left: 51px;
-        display: block;
+        display: flex;
         width: 729px;
         height: 143px;
         background: #ff1a0d;
@@ -125,7 +231,18 @@
         font-size: 70px;
         letter-spacing: 0.01em;
         color: #ffffff;
-        padding: 27px 121px;
         line-height: 127.6%;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 2560px) {
+            max-width: 487px;
+            max-height: 100px;
+            font-size: 55px;
+        }
+        @media (max-width: 1024px) {
+            max-width: 195px;
+            max-height: 40px;
+            font-size: 20px;
+        }
     }
 }

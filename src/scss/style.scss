@@ -90,5 +90,11 @@ img {
         top: 0;
         left: 0;
         background: url("imgs/header/bg.jpg") center / cover no-repeat;
+        @media (max-width: 2560px) {
+            background: url("imgs/header/bg1.jpg") center / cover no-repeat;
+        }
+        @media (max-width: 1024px) {
+            background: none
+        }
     }
 }
